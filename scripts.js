@@ -2,14 +2,18 @@ const root = document.querySelector(':root');
 const minOld = document.getElementById('minimum');
 const maxOld = document.getElementById('maximum');
 const p = document.createElement('p');
+document.body.appendChild(p);
+
 let minNew = 0;
 let maxNew = 0;
 
 document.querySelector('#minButton').addEventListener('click', event => {
+  event.preventDefault();
   minNew = minOld.value;
 });
 
 document.querySelector('#maxButton').addEventListener('click', event => {
+  event.preventDefault();
   maxNew = maxOld.value;
 });
 
@@ -20,9 +24,8 @@ function getRandomIntInclusive(min, max) {
 }
 
 document.querySelector('#getRandNum').addEventListener('click', event => {
-  const newNum = getRandomIntInclusive(minNew, maxNew);
-  p.innerText = newNum;
-  console.log(newNum);
+  event.preventDefault();
+  p.innerHTML = getRandomIntInclusive(minNew, maxNew);
 });
 
 document
