@@ -14,21 +14,24 @@
     <title>Random Number and Color</title>
   </head>
   <body>
-    <h1>Random Number and Color</h1>
-    <form>
-      <label for="minimum">Enter a minimum number</label>
-      <input type="text" id="minimum" />
-      <button id="minButton">Submit</button>
-
-      <label for="maximum">Enter a maximum number</label>
-      <input type="text" id="maximum" />
-      <button id="maxButton">Submit</button>
-
-      <label for="color">Choose a color</label>
-      <input type="color" id="color" name="color" />
-
+    <div class="entire">
+      <h1>Random Number and Color</h1>
+      <div class="min">
+        <label for="minimum">Enter a minimum number</label>
+        <input type="text" id="minimum" />
+        <button id="minButton">Submit</button>
+      </div>
+      <div class="max">
+        <label for="maximum">Enter a maximum number</label>
+        <input type="text" id="maximum" />
+        <button id="maxButton">Submit</button>
+      </div>
+      <div class="co">
+        <label for="color">Choose a color</label>
+        <input type="color" id="color" name="color" />
+      </div>
       <button id="getRandNum">Get your random number</button>
-    </form>
+    </div>
     <script src="./scripts.js" type="module"></script>
   </body>
 </html>
