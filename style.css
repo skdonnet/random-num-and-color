@@ -26,7 +26,7 @@ form {
 p {
   color: var(--color);
   display: flex;
-  font-size: large;
+  font-size: 67px;
   justify-content: center;
   padding-top: 2rem;
 }
