@@ -21,6 +21,7 @@ form {
 }
 
 p {
+  color: var (--color);
   display: flex;
   justify-content: center;
   padding-top: 2rem;
