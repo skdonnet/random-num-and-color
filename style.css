@@ -19,8 +19,9 @@ form {
 }
 
 p {
-  color: var (--color);
+  color: var(--color);
   display: flex;
+  font-size: large;
   justify-content: center;
   padding-top: 2rem;
 }
